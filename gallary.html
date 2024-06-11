@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: transparent !important;
+        }
+        body::-webkit-scrollbar {
+            width: 10px;               
+        }
+        body::-webkit-scrollbar-track {
+            background: linear-gradient(#0F2027,#203A43,#2C5364);
+            border-radius: 2rem;
+            height: 50vh;
+            border: 1px solid black;
+            margin: 2rem;
+        }
+        body::-webkit-scrollbar-thumb {
+            background: rgb(255, 255, 255);        
+            border-radius: 20px;
+            /* border: 3px solid var(--color-bg-4);  */
+        }
+        #gallary_buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            width: 60%;
+        }
+        #gallary_buttons .btns{
+            margin: 1rem;
+            /* border: 2px solid red; */
+            width: 100%;
+        }
+        #gallary_buttons li button{
+            font-size: 1.7rem;
+            background-color: transparent;
+            cursor: pointer;
+            font-weight: bolder;
+            width: 100%;
+            color: #FFFFFF;
+        }
+        #gallary_buttons li button:hover{
+            color: rgb(120, 150, 170); 
+            font-size: 1.9rem;
+            transition: all 400ms ease;
+        }
+        .line{
+            height: 2px;
+            width: 60%;
+            background-color: #000;
+            position: absolute;
+            top: 4rem;
+        }
+        .photos{
+            height: 100%;
+            width: 100%;
+            /* border: 2px solid red; */
+            margin: 0 auto;
+            padding: 1.5rem;
+            column-count: 4;
+        }
+        .photos img{
+            border: 1.8px solid white;
+            border-radius: 1rem;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 0.8rem;
+            padding: 0.5rem;
+            background-color: #000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+        <ul id="gallary_buttons">
+            <li class="btns"><button id="all_btn">All</button></li>
+            <li>|</li>
+            <li class="btns"><button id="school_btn">Schools</button></li>
+            <li>|</li>
+            <li class="btns"><button id="event_btn">Events</button></li>
+            <li>|</li>
+            <li class="btns"><button id="sport_btn">Sports</button></li>
+        </ul>
+        
+        <div class="line">
+
+        </div>
+        <div id="all" class="gallary_Container container photos">
+            <img src="IMG/gallary/1664611954865.jpg" alt="">
+            <img src="IMG/gallary/1664611954885.jpg" alt="">
+            <img src="IMG/gallary/1664611954907.jpg" alt="">
+            <img src="IMG/gallary/1664611954921.jpg" alt="">
+            <img src="IMG/gallary/1664611954933.jpg" alt="">
+            <img src="IMG/gallary/1664611954946.jpg" alt="">
+            <img src="IMG/gallary/1664611954961.jpg" alt="">
+            <img src="IMG/gallary/1664611954979.jpg" alt="">
+            <img src="IMG/gallary/1664611954999.jpg" alt="">
+            <img src="IMG/gallary/1664611955034.jpg" alt="">
+            <img src="IMG/gallary/1664611955058.jpg" alt="">
+            <img src="IMG/gallary/1664611955080.jpg" alt="">
+            <img src="IMG/gallary/1664611955102.jpg" alt="">
+            <img src="IMG/gallary/1664611955125.jpg" alt="">
+            <img src="IMG/gallary/1664611955149.jpg" alt="">
+            <img src="IMG/gallary/1664611955173.jpg" alt="">
+            <img src="IMG/gallary/1664611955200.jpg" alt="">
+            <img src="IMG/gallary/1664611955223.jpg" alt="">
+            <img src="IMG/gallary/1664611955250.jpg" alt="">
+            <img src="IMG/gallary/1664611955272.jpg" alt="">
+            <img src="IMG/gallary/1664611955301.jpg" alt="">
+            <img src="IMG/gallary/1664611955325.jpg" alt="">
+            <img src="IMG/gallary/1664611955349.jpg" alt="">
+            <img src="IMG/gallary/1664611955371.jpg" alt="">
+            <img src="IMG/gallary/1664611955393.jpg" alt="">
+            <img src="IMG/gallary/1664611955419.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_133257.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_133631.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_150445.jpg" alt="">
+            <img src="IMG/gallary/main.jpg" alt="">
+        </div>
+        <div id="schools" class="photos">
+            <img src="IMG/gallary/1664611955200.jpg" alt="">
+            <img src="IMG/gallary/1662544118945.jpg" alt="">
+            <img src="IMG/gallary/1664611955250.jpg" alt="">
+            <img src="IMG/gallary/1664611955301.jpg" alt="">
+            <img src="IMG/gallary/1664611955325.jpg" alt="">
+            <img src="IMG/gallary/1664611955349.jpg" alt="">
+            <img src="IMG/gallary/1664611955371.jpg" alt="">
+            <img src="IMG/gallary/1664611955393.jpg" alt="">
+            <img src="IMG/gallary/1664611955419.jpg" alt="">
+            <img src="IMG/gallary/gdpback.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_150445.jpg" alt="">
+            <img src="IMG/gallary/main.jpg" alt="">
+        </div>
+        <div id="events" class="photos">
+            <img src="IMG/gallary/1664611954865.jpg" alt="">
+            <img src="IMG/gallary/1664611954885.jpg" alt="">
+            <img src="IMG/gallary/1664611954907.jpg" alt="">
+            <img src="IMG/gallary/1664611954921.jpg" alt="">
+            <img src="IMG/gallary/1664611954933.jpg" alt="">
+            <img src="IMG/gallary/1664611954946.jpg" alt="">
+            <img src="IMG/gallary/1664611954961.jpg" alt="">
+            <img src="IMG/gallary/1664611955034.jpg" alt="">
+            <img src="IMG/gallary/1664611955058.jpg" alt="">
+            <img src="IMG/gallary/1664611955080.jpg" alt="">
+            <img src="IMG/gallary/1664611955102.jpg" alt="">
+            <img src="IMG/gallary/1664611955125.jpg" alt="">
+            <img src="IMG/gallary/1664611955149.jpg" alt="">
+            <img src="IMG/gallary/1664611955173.jpg" alt="">
+            <img src="IMG/gallary/1664611955223.jpg" alt="">
+        </div>
+        <div id="sports" class="photos">
+            <img src="IMG/gallary/1664611954979.jpg" alt="">
+            <img src="IMG/gallary/1664611954999.jpg" alt="">
+            <img src="IMG/gallary/1664611955371.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_133257.jpg" alt="">
+            <img src="IMG/gallary/IMG_20220907_133631.jpg" alt="">
+        </div>
+
+        <script src="js/gallary.js"></script>
+</body>
+</html>
